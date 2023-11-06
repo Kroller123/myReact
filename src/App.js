@@ -1,8 +1,9 @@
+import {CarsContainer} from "./Components/Cars/CarsContainer";
 
 function App() {
   return (
     <div>
-      App
+      <CarsContainer/>
     </div>
   );
 }
