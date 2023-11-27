@@ -2,7 +2,7 @@ import {axiosService} from "./axiosService";
 import {urls} from "../constants/ursl"
 
 let postsServices ={
-    getAll:() => axiosService.get(urls.posts),
+    getByUserId:(postId) => axiosService.get(urls.posts.base, {params:{postId}}),
     getById:(id) => axiosService.get(urls.posts.byId(id))
 }
 
